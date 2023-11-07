@@ -18,11 +18,9 @@ metadata:
     {{- include "game-cronjob-gameinterface-restart.labels" . | nindent 4 }}
 rules:
   - apiGroups: 
-      - ""
+      - apps
     resources: 
       - deployments
-    resourceNames: 
-      - game-gameinterface-*
     verbs: 
       - get
       - patch
