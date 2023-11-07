@@ -22,7 +22,7 @@ rules:
     resources: 
       - deployments
     resourceNames: 
-      - game-gameinterface-*
+      - game-gameinterface
     verbs: 
       - get
       - patch
