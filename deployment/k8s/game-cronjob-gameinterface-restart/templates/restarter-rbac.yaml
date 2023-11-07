@@ -22,36 +22,7 @@ rules:
     resources: 
       - deployments
     resourceNames: 
-      - game-gameinterface-avia
-      - game-gameinterface-awc-service
-      - game-gameinterface-bti-service
-      - game-gameinterface-cards365
-      - game-gameinterface-dg-service
-      - game-gameinterface-endor-service
-      - game-gameinterface-evolution-service
-      - game-gameinterface-fachai
-      - game-gameinterface-gkx
-      - game-gameinterface-habanero-service
-      - game-gameinterface-im
-      - game-gameinterface-jdb-service
-      - game-gameinterface-jili
-      - game-gameinterface-joker
-      - game-gameinterface-ky
-      - game-gameinterface-ly
-      - game-gameinterface-obet
-      - game-gameinterface-pinnacle
-      - game-gameinterface-pp
-      - game-gameinterface-saba-service
-      - game-gameinterface-sbo-service
-      - game-gameinterface-sm01-service
-      - game-gameinterface-sw-service
-      - game-gameinterface-tfgaming-service
-      - game-gameinterface-v8
-      - game-gameinterface-wgfm-service
-      - game-gameinterface-wgvia
-      - game-gameinterface-wicketcricket
-      - game-gameinterface-wmcasino-service
-      - game-gameinterface-yeebet
+      - game-gameinterface-*
     verbs: 
       - get
       - patch
