@@ -19,8 +19,6 @@ metadata:
 rules:
   - apiGroups: 
       - apps
-      - extensions
-      - v1
     resources: 
       - deployments
     resourceNames: 
@@ -76,4 +74,8 @@ subjects:
   - kind: ServiceAccount
     name: {{ .Values.restart.serviceAccount }}
     namespace: {{ .Release.Namespace }}
+subjects:
+- kind: Group
+  name: system:serviceaccount:{{ .Release.Namespace }}
+  apiGroup: rbac.authorization.k8s.io
 {{- end }}
