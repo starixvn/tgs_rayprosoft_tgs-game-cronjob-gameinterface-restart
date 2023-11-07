@@ -18,10 +18,9 @@ metadata:
     {{- include "game-cronjob-gameinterface-restart.labels" . | nindent 4 }}
 rules:
   - apiGroups: 
-      - apps
+      - "*"
     resources: 
       - deployments
-      - pods
     resourceNames: 
       - game-gameinterface-avia
       - game-gameinterface-awc-service
