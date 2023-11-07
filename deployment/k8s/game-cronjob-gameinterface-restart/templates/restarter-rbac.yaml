@@ -22,7 +22,7 @@ rules:
     resources: 
       - deployments
     resourceNames: 
-      - game-gameinterface
+      - tgs.game.kind=gameinterface
     verbs: 
       - get
       - patch
