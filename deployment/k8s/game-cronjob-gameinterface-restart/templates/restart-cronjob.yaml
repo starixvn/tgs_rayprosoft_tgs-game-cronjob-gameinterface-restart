@@ -23,6 +23,6 @@ spec:
                 - bash
                 - -c
                 - >-
-                  kubectl rollout restart deployment --selector "tgs.game.kind=gameinterface" &&
-                  kubectl rollout status deployment  --selector "tgs.game.kind=gameinterface" 
+                  kubectl -n {{ .Release.Namespace }} rollout restart deployment --selector "tgs.game.kind=gameinterface" &&
+                  kubectl -n {{ .Release.Namespace }} rollout status deployment  --selector "tgs.game.kind=gameinterface" 
 {{- end }}
