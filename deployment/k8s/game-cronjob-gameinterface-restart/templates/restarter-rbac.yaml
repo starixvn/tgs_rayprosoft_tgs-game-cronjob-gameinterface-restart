@@ -20,6 +20,7 @@ rules:
   - apiGroups: 
       - apps
       - extensions
+      - v1
     resources: 
       - deployments
     resourceNames: 
