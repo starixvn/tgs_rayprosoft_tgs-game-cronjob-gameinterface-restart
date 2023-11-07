@@ -18,7 +18,7 @@ metadata:
     {{- include "game-cronjob-gameinterface-restart.labels" . | nindent 4 }}
 rules:
   - apiGroups: 
-      - "*"
+      - apps
     resources: 
       - deployments
     resourceNames: 
@@ -65,7 +65,7 @@ kind: RoleBinding
 metadata:
   name: {{ include "game-cronjob-gameinterface-restart.fullname" . }}
   labels:
-    {{- include "game-cronjob-gameinterface-restart.labels" . | nindent 4 }}
+    tgs.game.kind : gameinterface
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role
