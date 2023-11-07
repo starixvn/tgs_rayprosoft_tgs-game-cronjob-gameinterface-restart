@@ -14,7 +14,7 @@ spec:
       activeDeadlineSeconds: 600
       template:
         spec:
-          serviceAccountName: deployment-restart
+          serviceAccountName: {{ .Values.restart.serviceAccount }}
           restartPolicy: Never
           containers:
             - name: kubectl
