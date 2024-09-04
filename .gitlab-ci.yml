@@ -49,7 +49,7 @@ deploy-dev:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
@@ -62,7 +62,7 @@ deploy-dev:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
@@ -91,7 +91,7 @@ deploy-staging:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
@@ -104,7 +104,7 @@ deploy-staging:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
@@ -134,7 +134,7 @@ deploy-prod:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
@@ -147,7 +147,7 @@ deploy-prod:
       {
         "restart": {
             "enabled": true,
-            "schedule": "3 0 * * 4"
+            "schedule": "3 0 * * 1-4/3"
         }
       }
       EOF
